@@ -89,9 +89,13 @@ section.resume-section {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh; }
-    section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
+    /* min-height: 100vh; */
+    min-height: auto !important;
+  }
+  section.resume-section .resume-item .resume-date {
+      min-width: 18rem;
+    }
+}
 
 @media (min-width: 992px) {
   section.resume-section {
@@ -114,4 +118,4 @@ a {
 }
 .special-link:hover, .special-link:focus, .special-link:active {
   color: #824027;
-}    
+}

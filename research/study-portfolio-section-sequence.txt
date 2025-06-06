@@ -4,7 +4,7 @@ Portfolio Order:
 3. Publication
 4. Education
 5. Work Experience
-6. Project
-7. Skill
+6. Skill
+7. Project
 8. Programming
 9. Award
