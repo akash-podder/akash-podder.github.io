@@ -6,5 +6,6 @@ Portfolio Order:
 5. Work Experience
 6. Skill
 7. Project
-8. Programming
-9. Award
+8. Certification
+9. Programming
+10. Award

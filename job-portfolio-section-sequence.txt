@@ -5,6 +5,7 @@ Portfolio Order:
 4. Education
 5. Project
 6. Programming
-7. Research Experience
-8. Publication
-9. Award
+7. Certification
+8. Research Experience
+9. Publication
+10. Award
