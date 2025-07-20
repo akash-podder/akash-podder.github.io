@@ -1,10 +1,10 @@
 # Website link
 
 ### Main Site:
-https://ratedrakash.github.io/akashpodder/
+https://akash-podder.github.io/
 
 ### Portfolio Site:
-https://ratedrakash.github.io/akashpodder/portfolio/
+https://akash-podder.github.io/portfolio/
 
 ### Research Site:
-https://ratedrakash.github.io/akashpodder/research/
+https://akash-podder.github.io/research/
