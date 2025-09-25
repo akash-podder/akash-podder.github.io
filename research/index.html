@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
 
 </head>
 
@@ -77,29 +77,30 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#award">Award</a>
         </li>
-
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+    <section class="resume-section d-flex d-column" id="about">
       <div class="my-auto">
-        <h1 class="mb-0">Ananta Akash Podder
+        <h1 class="mb-0 mainheading">Ananta Akash Podder
           <span class="text-primary"></span>
         </h1>
-        <table>
+        <h4><a class="special-link" href="mailto:anantaakash.podder@gmail.com">anantaakash.podder@gmail.com</a></h4>
+        
+        <!-- <table>
           <tr class="subheading mb-5">
-            <th><a class="special-link" href="mailto:anantaakash.podder@gmail.com">anantaakash.podder@gmail.com</a></th>
-            <!-- <th>  |  </th>
+            <h4><a class="special-link" href="mailto:anantaakash.podder@gmail.com">anantaakash.podder@gmail.com</a></h4>
+             <th>  |  </th>
                 <th></th>
                 <th></th>
                 <th></th><th></th>
                 <th></th>
                       <th><a href= "#">Researchgate Profile</a></th>
-                    </tr> -->
-        </table>
+                    </tr>
+        </table> -->
 
 
         <ul class="list-inline list-social-icons mb-0">
@@ -141,8 +142,7 @@
 
         </ul>
 
-        <br>
-        <p>
+        <p class="mt-4">
           I am an experienced Software Engineer specializing in application development, with a strong background in
           Agile methodologies and Linux. Passionate about advancing industry practices through research, my interests
           include web development, machine learning, natural language processing and software security. As a
@@ -158,14 +158,14 @@
     </section>
 
     <!-- ------------------------------------------Research Experience----------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 flex-column" id="research-experience">
+    <section class="resume-section flex-column" id="research-experience">
       <div class="my-auto">
-        <h2 class="mb-0">Research Experience</h2>
+        <h2 class="mb-0 mainheading">Research Experience</h2>
         <div class="resume-item d-flex flex-column flex-md-row">
           <div class="resume-content mr-auto">
             <div class="header-container d-flex align-items-center mb-0">
               <div class="subheading"><i>Bangla Topic Modeling Techniques and Comparison</i></div>
-              <ul class="list-inline list-social-icons mb-0 ml-3">
+              <ul class="list-inline list-social-icons mb-0 ml-1">
                 <li class="list-inline-item">
                   <a href="https://github.com/akash-podder/Bangla_Topic_Modeling">
                     <span class="fa-stack fa-lg">
@@ -196,7 +196,6 @@
                 in 9 different categories over the past 5 years.
               </li>
             </ul>
-            <br>
           </div>
 
           <div class="resume-date text-md-right">
@@ -207,11 +206,11 @@
     </section>
 
 
-    <!-- ------------------------------------------Publication Experience----------------------------------------------------------------- -->
-    <section class="p-3 p-lg-5 flex-column" id="publication">
+    <!-- ------------------------------------------Publication----------------------------------------------------------------- -->
+    <section class="resume-section flex-column" id="publication">
       <div class="my-auto">
-        <h2>Publication</h2>
-        <div class="resume-item d-flex flex-column flex-md-row">
+        <h2 class="mainheading">Publication</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-3 ml-3">
           <div class="resume-content mr-auto">
             <li>
               <b>A Systematic Literature Review on English and Bangla Topic Modeling</b>, Journal of Computer Science,
@@ -221,14 +220,10 @@
         </div>
     </section>
 
-    <!-- 1px Border 'resume-section' is Not used in `Publication` -->
-    <div style="border-bottom: 1px solid #dee2e6;">
-    </div>
-    
     <!-- ------------------------------------------Education----------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+    <section class="resume-section d-flex flex-column" id="education">
       <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
+        <h2 class="mb-4 mainheading">Education</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-4">
           <div class="resume-content mr-auto">
@@ -260,83 +255,112 @@
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- ------------------------------------------Work Experience----------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 flex-column" id="work-experience">
+    <section class="resume-section flex-column" id="work-experience">
       <div class="my-auto">
-        <h2 class="mb-5">Work Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
+        <h2 class="mb-3 mainheading">Work Experience</h2>
+        
+        <div class="resume-item d-flex flex-column flex-md-row mb-4">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Progoti Systems Limited | Tallykhata<a
-                href="https://www.linkedin.com/company/tallykhata/">&#x1F517;</a></h3>
+            <h3 class="mb-0">Tekarsh | MarginEdge<a
+                href="https://www.marginedge.com/">&#x1F517;</a></h3>
             <div class="subheading mb-3"><i>Software Engineer</i></div>
-            <p><b><i>Tallykhata Backend</i></b></p>
-            <ul>
-              <li>
-                Enhanced the external notification system by sending notifications in chunks using Celery and Celery
-                Beat, resulting in a <b>70% performance improvement</b> for a user base of over <b>5 million</b>.
-              </li>
-              <li>
-                Helped to establish Robust CI/CD Pipelines in GitLab with Docker & Docker-compose, reducing deployment
-                times, minimizing errors, and enhancing overall development efficiency.
-              </li>
-              <li>
-                Worked on syncing user data from Android Application to Django Backend Server.
-              </li>
-              <li>
-                Integrating third-party APIs and Deploying Django applications using Nginx & Gunicorn.
-              </li>
-              <li>
-                Developed PWA (Progressive Web App) for multiple dynamic URLs for feature called 'Credit Collection
-                Link'.
-              </li>
-              <!-- <li>
-                  Worked with Celery & Celery Beat to handle one-time & periodic Notification sending tasks to Android Apps using 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firebase Admin Python SDK in Backend.
-                  COMMENT: here `&nbsp;` --- is Equal to TAB in HTML to Align the Text
-                </li> -->
-            </ul>
-            <h6>Frameworks, Tools & OS:</h6> Django, Docker, Linux, Celery, Nginx, Gunicorn
-            
-            <br>
-            <br>
-            <br>
-            
-            <p><b><i>Tallypay Backend</i></b></p>
-            <ul>
-              <li>
-                Horizontally scaled & containerized <b>Redis Server</b> using Redis Sentinel and HAProxy, deploying a
-                cluster of master nodes and replicas, ensuring <b>high availability</b> & addressing <b>single point of
-                  failure</b>.
-              </li>
-              <li>
-                Implemented a publisher-subscriber architecture using Java Spring and RabbitMQ to facilitate eKYC
-                information verification for Tallypay users by the TechOps team.
-              </li>
-              <li>
-                Developed API mechanisms to block/unblock any specific user debit or credit transaction to prevent
-                fraud.
-              </li>
-            </ul>
-            <h6>Frameworks & Tools:</h6> Spring-Boot, HAProxy, Redis, Rabbit-MQ
-
-            <br>
-            <br>
-            <br>
-            <p><b><i>Tallykhata Mobile App</i></b></p>
-            <ul>
-              <li>
-                Worked on MVVM(Model, View, ViewModel) pattern in Android Application.
-              </li>
-              <li>
-                Worked with Android's Webview & JavaScript Interface to integrate various 3rd party payment system APIs.
-              </li>
-            </ul>
-            <h6>Frameworks & Tools:</h6> Android SDK, Retrofit
+            <div class="mb-4">
+              <ul>
+                <li>
+                  Contributed to MarginEdge’s subscription billing system, supporting <b>10k+ USA restaurants</b>, by provisioning cloud infrastructure via <b>AWS CDK</b>.
+                </li>
+                <li>
+                  Integrated <b>LaunchDarkly</b><a href="https://launchdarkly.com/">&#x1F517;</a> into the CDK project to introduce feature flag mechanism that improved release flexibility and ensured <b>zero-downtime rollbacks</b> during production.
+                </li>
+                <li>
+                  Mentored junior developers, fostering knowledge-sharing and acquired proficiency in Agile work culture.
+                </li>
+              </ul>
+              <h6>Frameworks, Tools & OS:</h6> JavaSpring Boot, ReactJS, AWS CDK (EC2, Lambda, DynamoDB, SQS, SNS, S3, CloudFormation)
+            </div>
 
           </div>
 
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2021 - Present</span>
+            <span class="text-primary">2025 - Present</span>
+          </div>
+
+        </div>
+        
+        <!-- ------------------------------------------Tallykhata Experience----------------------------------------------------------------- -->
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3>Progoti Systems Limited | Tallykhata<a
+                href="https://www.linkedin.com/company/tallykhata/">&#x1F517;</a></h3>
+            <div class="subheading mb-3"><i>Software Engineer</i></div>
+
+            <div class="mb-4">
+              <b><i>Tallykhata Backend</i></b>
+              <ul>
+                <li>
+                  Enhanced the external notification system by sending notifications in chunks using Celery and Celery
+                  Beat, resulting in a <b>70% performance improvement</b> for a user base of over <b>5 million</b>.
+                </li>
+                <li>
+                  Helped to establish Robust CI/CD Pipelines in GitLab with Docker & Docker-compose, reducing deployment
+                  times, minimizing errors, and enhancing overall development efficiency.
+                </li>
+                <li>
+                  Worked on syncing user data from Android Application to Django Backend Server.
+                </li>
+                <li>
+                  Integrating third-party APIs and Deploying Django applications using Nginx & Gunicorn.
+                </li>
+                <li>
+                  Developed PWA (Progressive Web App) for multiple dynamic URLs for feature called 'Credit Collection
+                  Link'.
+                </li>
+                <!-- <li>
+                    Worked with Celery & Celery Beat to handle one-time & periodic Notification sending tasks to Android Apps using 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firebase Admin Python SDK in Backend.
+                    COMMENT: here `&nbsp;` --- is Equal to TAB in HTML to Align the Text
+                  </li> -->
+              </ul>
+              <h6>Frameworks, Tools & OS:</h6> Django, Docker, Linux, Celery, Nginx, Gunicorn
+            </div>
+
+            <div class="mb-4">
+              <b><i>Tallypay Backend</i></b>
+              <ul>
+                <li>
+                  Horizontally scaled & containerized <b>Redis Server</b> using Redis Sentinel and HAProxy, deploying a
+                  cluster of master nodes and replicas, ensuring <b>high availability</b> & addressing <b>single point of
+                    failure</b>.
+                </li>
+                <li>
+                  Implemented a publisher-subscriber architecture using Java Spring and RabbitMQ to facilitate eKYC
+                  information verification for Tallypay users by the TechOps team.
+                </li>
+                <li>
+                  Developed API mechanisms to block/unblock any specific user debit or credit transaction to prevent
+                  fraud.
+                </li>
+              </ul>
+              <h6>Frameworks & Tools:</h6> Spring-Boot, HAProxy, Redis, Rabbit-MQ
+            </div>
+            
+            <div class="mb-4">
+              <b><i>Tallykhata Mobile App</i></b>
+              <ul>
+                <li>
+                  Worked on MVVM(Model, View, ViewModel) pattern in Android Application.
+                </li>
+                <li>
+                  Worked with Android's Webview & JavaScript Interface to integrate various 3rd party payment system APIs.
+                </li>
+              </ul>
+              <h6>Frameworks & Tools:</h6> Android SDK, Retrofit
+            </div>
+
+          </div>
+
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2021 - 2025</span>
           </div>
 
         </div>
@@ -347,33 +371,31 @@
 
 
     <!-- -------------------------------------------------Skill-------------------------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skill">
+    <section class="resume-section d-flex flex-column" id="skill">
       <div class="my-auto">
-        <h2 class="mb-4">Skill</h2>
+        <h2 class="mb-3 mainheading">Skill</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row">
           <div class="resume-content mr-auto">
             <h3 class="mb-0"></h3>
             <div class="subheading mb-3">Programming Languages & Essentials</div>
-            <p>C, C++, Java, Python, SQL, HTML, CSS</p>
+            <p>Java, Python, C/C++, JavaScript, TypeScript, SQL, HTML, CSS</p>
           </div>
         </div>
-
-        <!-- <div class="resume-item d-flex flex-column flex-md-row"> -->
-        <!-- <div class="resume-content mr-auto"> -->
-        <!-- <h3 class="mb-0"></h3> -->
-        <!-- <div class="subheading mb-3">Secondary Programming Languages</div> -->
-        <!-- <p>C#, PHP</p> -->
-        <!-- </div> -->
-
-        <!-- </div> -->
-
+        
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0"></h3>
+            <div class="subheading mb-3">Application Frameworks</div>
+            <p>Django, Spring-Boot, ReactJS, FastAPI, Android SDK, Laravel</p>
+          </div>
+        </div>
 
         <div class="resume-item d-flex flex-column flex-md-row">
           <div class="resume-content mr-auto">
             <h3 class="mb-0"></h3>
-            <div class="subheading mb-3">Application Frameworks & OS</div>
-            <p>Django, Spring-Boot, Linux OS, Android SDK, Laravel</p>
+            <div class="subheading mb-3">DevOps, Cloud and OS</div>
+            <p>Linux OS, Docker, Kubernetes, AWS (EC2, Lambda, DynamoDB, SQS, SNS, S3, CloudFormation), Jenkins, Ansible</p>
           </div>
         </div>
 
@@ -381,16 +403,7 @@
           <div class="resume-content mr-auto">
             <h3 class="mb-0"></h3>
             <div class="subheading mb-3">Tools</div>
-            <p>Docker, Docker-compose, Redis, Rabbit-MQ, HAProxy, Nginx, Gunicorn, Celery, Apache JMeter, Jenkins, Mitm
-              Proxy, Git, LaTeX</p>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0"></h3>
-            <div class="subheading mb-3">Databases</div>
-            <p>Postgres, MySQL</p>
+            <p>Rabbit-MQ, HAProxy, Nginx, Gunicorn, Celery, Apache JMeter, Mitm Proxy, Git, LaTeX, Wireshark</p>
           </div>
         </div>
 
@@ -398,7 +411,7 @@
           <div class="resume-content mr-auto">
             <h3 class="mb-0"></h3>
             <div class="subheading mb-3">Machine Learning Frameworks</div>
-            <p>TensorFlow, Keras, scikit-learn</p>
+            <p>Tensorflow, Langchain, PyTorch, Keras, Pandas, Scikit-learn</p>
           </div>
         </div>
 
@@ -408,16 +421,16 @@
 
 
     <!-- -----------------------------------------------------------Project------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column mb-4" id="project">
-      <h2 class="mb-4">Project</h2>
+    <section class="resume-section d-flex flex-column" id="project">
+      <h2 class="mb-4 mainheading">Project</h2>
 
       <!-- /* <div class="subheading mb-3">Programming Languages &amp; Tools</div>*/ -->
 
-      <div class="resume-item d-flex flex-column flex-md-row">
+      <div class="resume-item d-flex flex-column flex-md-row mb-4">
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">Youtube Transcript Summarizer using RAG</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/Youtube-Transcript-Summarizer-Using-RAG-Langchain">
                   <span class="fa-stack fa-lg">
@@ -454,7 +467,7 @@
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">Movie Recommender System</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/Movie-Recommender-System">
                   <span class="fa-stack fa-lg">
@@ -492,7 +505,7 @@
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">Redis Replication & High availability with Redis Sentinel</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/Redis-Replication">
                   <span class="fa-stack fa-lg">
@@ -529,7 +542,7 @@
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">Simple Custom Linux Read Driver</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/Linux-Simple-Device-Driver">
                   <span class="fa-stack fa-lg">
@@ -560,7 +573,7 @@
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">p2p Messenger</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/P2P_Messenger_App">
                   <span class="fa-stack fa-lg">
@@ -592,7 +605,7 @@
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">E-Learniverse</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/E-Learniverse-Django">
                   <span class="fa-stack fa-lg">
@@ -632,13 +645,12 @@
           <span class="text-primary">January 2022</span>
         </div>
       </div>
-
       <!-- ----------------------------------------------------------- -->
       <div class="resume-item d-flex flex-column flex-md-row mb-4">
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">SUST Resource Archive</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/SUST_Resource_Archive">
                   <span class="fa-stack fa-lg">
@@ -666,11 +678,12 @@
       </div>
 
       <!-- ----------------------------------------------------------- -->
-      <div class="resume-item d-flex flex-column flex-md-row mb-4">
+      <!-- LAST Project so No GAP "mb-4" is Needed -->
+      <div class="resume-item d-flex flex-column flex-md-row">
         <div class="resume-content mr-auto">
           <div class="header-container d-flex align-items-center">
             <h3 class="mb-0">ECHO</h3>
-            <ul class="list-inline list-social-icons mb-0 ml-3">
+            <ul class="list-inline list-social-icons mb-0 ml-1">
               <li class="list-inline-item">
                 <a href="https://github.com/akash-podder/ECHO">
                   <span class="fa-stack fa-lg">
@@ -704,7 +717,7 @@
           <div class="resume-content mr-auto">
             <div class="header-container d-flex align-items-center">
               <h3 class="mb-0">SUST Volunteer Management</h3>
-              <ul class="list-inline list-social-icons mb-0 ml-3">
+              <ul class="list-inline list-social-icons mb-0 ml-1">
                 <li class="list-inline-item">
                   <a href="https://github.com/akash-podder/Sust_Volunteer_Management">
                     <span class="fa-stack fa-lg">
@@ -723,7 +736,7 @@
                 etc. arrange many events) can have many students as volunteer for organizing the event.
               </li>
             </ul>
-            <br>
+
             <h6>Tools:</h6> Laravel, MySql
           </div>
 
@@ -738,7 +751,7 @@
           <div class="resume-content mr-auto">
             <div class="header-container d-flex align-items-center">
               <h3 class="mb-0">Smart Shop Manager</h3>
-              <ul class="list-inline list-social-icons mb-0 ml-3">
+              <ul class="list-inline list-social-icons mb-0 ml-1">
                 <li class="list-inline-item">
                   <a href="https://github.com/akash-podder/ShopManager_Java">
                     <span class="fa-stack fa-lg">
@@ -757,7 +770,6 @@
                 billing sales, and employee information.
               </li>
             </ul>
-            <br>
             <h6>Tools:</h6> Java, JavaFx, CSS
           </div>
 
@@ -770,38 +782,11 @@
     </section>
     <!-- --------------------------------------------------End Project----------------------------------------------------- -->
 
-    <!-- -------------------------------------------------------Certification--------------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 flex-column" id="certification">
-      <div class="my-auto">
-        <h2 class="mb-0">Certification</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <ul>
-              <li>
-                Natural Language Processing with Classification and Vector Spaces <a href="https://coursera.org/share/693c844c1b1e46c89e61355131ebadd9">&#x1F517;</a>
-              </li>
-              <li>
-                Deep Learning Specialization <a href="https://coursera.org/share/281b32819f0e7bc7a9c0709162cd1f19">&#x1F517;</a>
-              </li>
-              <li>
-                HackerRank Problem Solving (Basic) Certificate <a href="https://www.hackerrank.com/certificates/26d38b6732bb">&#x1F517;</a>
-              </li>
-              <li>
-                HackerRank Software Engineer Certificate <a href="https://www.hackerrank.com/certificates/26d38b6732bb">&#x1F517;</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- -------------------------------------------------------Programming--------------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 flex-column" id="programming">
+    <section class="resume-section d-flex flex-column" id="programming">
       <div class="my-auto">
-        <h2 class="mb-0">Programming</h2>
+        <h2 class="mb-0 mainheading">Programming</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row">
           <div class="resume-content mr-auto">
@@ -846,16 +831,36 @@
     </section>
     <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-
-    <!-- -------------------------------------------------------Award--------------------------------------------------------------------- -->
-    <section class="resume-section p-3 p-lg-5 flex-column" id="award">
+    <!-- -------------------------------------------------------Certification--------------------------------------------------------------------- -->
+    <section class="resume-section flex-column" id="certification">
       <div class="my-auto">
-        <h2 class="mb-0">Award</h2>
-        <ul class="fa-ul mb-0">
-        </ul>
+        <h2 class="mb-0 mainheading">Certification</h2>
+
         <div class="resume-item d-flex flex-column flex-md-row">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">LICT SUST TECHFEST 2019</h3>
+            <ul>
+              <li>
+                HackerRank Problem Solving (Basic) Certificate <a href="https://www.hackerrank.com/certificates/26d38b6732bb">&#x1F517;</a>
+              </li>
+              <li>
+                HackerRank Software Engineer Certificate <a href="https://www.hackerrank.com/certificates/26d38b6732bb">&#x1F517;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- -------------------------------------------------------Award--------------------------------------------------------------------- -->
+    <section class="resume-section flex-column" id="award">
+      <div class="my-auto">
+        <h2 class="mainheading">Award</h2>
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3>LICT SUST TECHFEST 2019</h3>
             <div class="subheading mb-3"></div>
             <p><b>2nd Runner-Up</b> in Software Hackathon held on 19-20th April, 2019 at the event.</p>
           </div>
