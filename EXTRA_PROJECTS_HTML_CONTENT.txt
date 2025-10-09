@@ -1,0 +1,145 @@
+EXTRA PROJECTS - HTML Content Archive
+=====================================
+
+This file contains HTML content for extra projects that are not currently displayed on the main portfolio website.
+These can be copied back into the main index.html file if needed.
+
+<!-- ****** EXTRA PROJECT ****** -->
+<!-- ----------------------------------------------------------- -->
+
+<!-- SUST Volunteer Management -->
+<div class="resume-item d-flex flex-column flex-md-row mb-4">
+  <div class="resume-content mr-auto">
+    <div class="header-container d-flex align-items-center">
+      <h3 class="mb-0">SUST Volunteer Management</h3>
+      <ul class="list-inline list-social-icons mb-0 ml-1">
+        <li class="list-inline-item">
+          <a href="https://github.com/akash-podder/Sust_Volunteer_Management">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="subheading mb-0"></div>
+    <p><i>Web Project</i></p>
+    <ul>
+      <li>
+        A web application developed in Laravel where SUST organizations (e.g., cultural, career oriented, debate
+        etc. arrange many events) can have many students as volunteer for organizing the event.
+      </li>
+    </ul>
+
+    <h6>Tools:</h6> Laravel, MySql
+  </div>
+
+  <div class="resume-date text-md-right">
+    <span class="text-primary">November 2019</span>
+  </div>
+</div>
+
+<!-- ----------------------------------------------------------- -->
+
+<!-- SUST Resource Archive -->
+<div class="resume-item d-flex flex-column flex-md-row mb-4">
+  <div class="resume-content mr-auto">
+    <div class="header-container d-flex align-items-center">
+      <h3 class="mb-0">SUST Resource Archive</h3>
+      <ul class="list-inline list-social-icons mb-0 ml-1">
+        <li class="list-inline-item">
+          <a href="https://github.com/akash-podder/SUST_Resource_Archive">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="subheading mb-0"></div>
+    <p><i>Web Project</i></p>
+    <ul>
+      <li>
+        A web application where thesis & research related works are stored & can easily be shared with others
+        for research purpose.
+      </li>
+    </ul>
+    <h6>Tools:</h6> Laravel, MySql
+  </div>
+
+  <div class="resume-date text-md-right">
+    <span class="text-primary">January 2021</span>
+  </div>
+</div>
+
+<!-- ----------------------------------------------------------- -->
+
+<!-- ECHO Project -->
+<div class="resume-item d-flex flex-column flex-md-row">
+  <div class="resume-content mr-auto">
+    <div class="header-container d-flex align-items-center">
+      <h3 class="mb-0">ECHO</h3>
+      <ul class="list-inline list-social-icons mb-0 ml-1">
+        <li class="list-inline-item">
+          <a href="https://github.com/akash-podder/ECHO">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="subheading mb-0"></div>
+    <p><i>Android Project</i></p>
+    <ul>
+      <li>
+        ECHO is a language conversion android app that take a form of language such as text, speech, sign as
+        input and convert them into another form.
+      </li>
+    </ul>
+    <h6>Tools:</h6> Android SDK, Java
+  </div>
+
+  <div class="resume-date text-md-right">
+    <span class="text-primary">August 2019</span>
+  </div>
+</div>
+
+<!-- ----------------------------------------------------------- -->
+
+<!-- Smart Shop Manager -->
+<div class="resume-item d-flex flex-column flex-md-row mb-4">
+  <div class="resume-content mr-auto">
+    <div class="header-container d-flex align-items-center">
+      <h3 class="mb-0">Smart Shop Manager</h3>
+      <ul class="list-inline list-social-icons mb-0 ml-1">
+        <li class="list-inline-item">
+          <a href="https://github.com/akash-podder/ShopManager_Java">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="subheading mb-0"></div>
+    <p><i>Java Desktop Application</i></p>
+    <ul>
+      <li>
+        It is an early year project of mine as a student which is a desktop application to manage shop products,
+        billing sales, and employee information.
+      </li>
+    </ul>
+    <h6>Tools:</h6> Java, JavaFx, CSS
+  </div>
+
+  <div class="resume-date text-md-right">
+    <span class="text-primary">May 2018</span>
+  </div>
+</div>
+
+<!-- ----------------------------------------------------------- -->
