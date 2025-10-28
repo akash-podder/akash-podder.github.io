@@ -1,0 +1,348 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% TODO: Ramos --> Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=0.75cm,bottom=0.75cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+% TODO: Ramos --> to get Double Column
+% \usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% TODO: Ramos --> It is So that WORD doesn't get Break in the Next Line %
+\usepackage[none]{hyphenat}
+\usepackage{ragged2e}      
+\sloppy                    
+\setlength{\parindent}{0pt}
+
+% TODO: Ramos --> Change Headline Color %
+\definecolor{Black}{HTML}{000000}
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{Aqua}{HTML}{318CE7}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{tagline}{Black}
+\colorlet{heading}{Aqua}
+\colorlet{headingrule}{Black}
+\colorlet{subheading}{Black}
+\colorlet{accent}{Aqua}
+\colorlet{name}{Aqua} % TODO: Ramos --> NAME Color %
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{SlateGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Ananta Akash Podder}
+\photo{2.55cm}{akashpodder} % TODO: Ramos --> 1st param: Photo Size, 2nd Param: Photo location in folder
+
+\tagline{}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+% \personalinfo{
+%   % Not all of these are required!
+%   % You can add your own with \printinfo{symbol}{detail}
+%   \phone{+8801776341208}
+%   \email{anantaakash.podder@gmail.com}
+%   \linkedin{ananta-akash-podder}
+%   \homepage{akashpodder.portfolio}{https://akash-podder.github.io/}
+%   \github{akash-podder}
+%   \location{Mohammadpur, Dhaka-1207, Bangladesh}
+% }
+
+\personalinfo{
+    % First Row - Email, Phone and Location
+    \makebox[\linewidth]{\email{anantaakash.podder@gmail.com} |
+    \phone{+8801776341208} | \location{Mohammadpur, Dhaka-1207, Bangladesh}}
+    % Second Row - LinkedIn, GitHub, and Homepage
+    \makebox[\linewidth]{\linkedin{ananta-akash-podder} | \github{akash-podder}{https://github.com/akash-podder} | \homepage{akashpodder.portfolio}{https://akash-podder.github.io/}}
+}
+
+\makecvheader
+
+\cvsection{Work Experience}
+
+\cvwork{\textbf{Tekarsh \textbar{} MarginEdge {\href{https://www.marginedge.com/}{\faLink}}}}{Software Engineer}{2025-Current}
+\textbf{Invioso Backend}
+\begin{itemize}
+\item Contributed to MarginEdge’s subscription billing system, supporting \textbf{10k+ USA restaurants}, by streamlining cloud infrastructure with \textbf{AWS CDK}.
+\item Integrated \textbf{LaunchDarkly}{\href{https://launchdarkly.com/}{\faLink}} into the CDK project to introduce feature flag mechanism that improved release flexibility and ensured \textbf{zero-downtime rollbacks} during production.
+\item Mentored junior developers, fostering knowledge-sharing and acquired proficiency in Agile work culture.
+\end{itemize}
+
+\cvwork{\textbf{Progoti Systems Limited \textbar{} Tallykhata {\href{https://www.linkedin.com/company/tallykhata/}{\faLink}}}}{Software Engineer}{2021-2025}
+\textbf{Tallykhata Backend}
+\begin{itemize}
+\item Enhanced the external \textbf{notification system} by sending notifications in chunks using Celery and Celery Beat, resulting in a \textbf{70\% performance improvement} for a user base of over \textbf{5 million}.{\href{https://play.google.com/store/apps/details?id=com.progoti.tallykhata&hl=en}{\faLink}}
+\item Helped to establish robust CI/CD Pipelines in GitLab with \textbf{Docker} \& \textbf{Docker-compose}, \textbf{reducing deployment times} \& operational costs.
+\item Worked on \textbf{syncing user data} from Android Application to Backend Server, which improved real-time user experience \& solved customer's data inconsistency problem.
+\end{itemize}
+
+\textbf{Tallypay Backend}
+\begin{itemize}
+\item \textbf{Horizontally scaled} \& containerized \textbf{Redis Server} using Redis Sentinel and HAProxy, deploying a cluster of master nodes and replicas, ensuring \textbf{high availability} \& addressing \textbf{single point of failure}. \textbf{\href{https://github.com/akash-podder/Redis-Replication}{(link)}}
+\item Implemented a publisher-subscriber architecture using Java Spring Boot \& \textbf{RabbitMQ} to facilitate eKYC information verification for Tallypay users by the TechOps team.
+\end{itemize}
+
+\divider
+
+\textbf{Tallykhata Backend}
+\begin{itemize}
+\item Enhanced the external \textbf{notification system} by sending notifications in chunks using Celery and Celery Beat, resulting in a \textbf{70\% performance improvement} for a user base of over \textbf{5 million}.
+\textbf{PREVIOUS:} Enhanced the external notification system by implementing Celery and Celery Beat to send notifications to users in chunks, leading to improved processing efficiency and streamlined bulk service calling. This optimization significantly boosted system performance, serving a user base of over \textbf{5 million}.
+\item Helped to establish robust CI/CD Pipelines in GitLab with Docker \& Docker-compose, reducing deployment times, minimizing errors and enhancing overall development efficiency while ensuring comprehensive test coverage.
+\item Worked on syncing user data from Android Application to Django Backend Server.
+\item Developed \textbf{Progressive Web App (PWA)} for managing multiple dynamic URLs in the 'Credit Collection Link' feature, enabling customers to make online payments via the web version of the Android app.
+\item Integrating third-party APIs and Deploying Django applications using Nginx \& Gunicorn.
+\end{itemize}
+\textbf{Tallypay Backend}
+\begin{itemize}
+\item Horizontally scaled \& containerized \textbf{Redis Server} using Redis Sentinel and HAProxy, deploying a cluster of master nodes and replicas, ensuring \textbf{high availability} \& addressing \textbf{single point of failure}.
+\item Implemented horizontal scaling for RabbitMQ, ensuring high availability by clustering multiple nodes to enhance
+message queue processing capabilities.
+\item Refactored and migrated the Tallypay Notification Service from WSO2, which uses Apache Synapse as its core integration engine, to a Java Spring Boot (Spring Cloud Stream) stack for sending notifications and SMS to Tallypay users.
+\item Implemented a publisher-subscriber architecture using Java Spring and RabbitMQ to facilitate eKYC information verification for Tallypay users by the TechOps team.
+\item Developed API mechanisms to block/unblock any specific user debit or credit transaction to prevent fraud.
+\end{itemize}
+\textbf{Tallykhata Mobile App}
+\begin{itemize}
+% \item Worked on Android's MVVM (Model, View, ViewModel) pattern to integrate various 3rd party payment system APIs.
+\item Worked on MVVM(Model, View, ViewModel) pattern in Android Application.
+\item Worked with Android's Webview \& JavaScript Interface to integrate various 3rd party payment system APIs.
+\end{itemize}
+\textbf{EXTRA}
+\begin{itemize}
+\item Worked on EKYC (electronic Know Your Customer) functionality, integrating the backend with 3rd-party application APIs for text extraction from national identity documents and face recognition.
+\item Helped to establish robust CI/CD Pipelines in GitLab with Docker \& Docker-compose, reducing deployment times and enhancing overall development efficiency.
+\item Implemented a publisher-subscriber architecture using Java Spring and RabbitMQ to facilitate EKYC information verification for Tallypay users by the TechOps team.
+\item Supervised new recruits to ensure their proper training and development.
+\end{itemize}
+
+% END of Work Experience
+
+
+\cvsection{Education}
+\cveducation{Shahjalal University of Science and Technology}{B.Sc. in Computer Science \& Engineering}{2017--2021}{CGPA - 3.72/4.00}
+\cveducation{Dhaka Residential Model College}{Higher Secondary Certificate}{2014--2016}{GPA - 5.00/5.00}
+
+\cvsection{Skills}
+\cvskill{Programming Languages \& Essentials:}{Java, Python, C/C++, JavaScript, TypeScript, SQL, HTML, CSS}
+
+\cvskill{Frameworks, Tools \& Others:}{Django, Spring Boot, FastAPI, Langchain, Redis, RabbitMQ, Nginx, HAProxy, Gunicorn, Celery, Git, Bash, Apache JMeter, Mitm Proxy, Android SDK, React JS, Laravel, Pandas, Tensorflow, Wireshark}
+
+\cvskill{Framework, Library \& OS: ---> Alternative of the Previous One}
+{Django, Spring Boot, Linux OS, Android SDK, TensorFlow, Keras}
+
+\cvskill{DevOps, Cloud \& OS:} {Linux OS, Docker, Kubernetes, Helm, AWS (EC2, Lambda, DynamoDB, SQS, SNS, S3, CloudFormation etc.), Jenkins, Ansible}
+
+\cvskill{Area of Interests:}{Web Development, Computer Networking, Machine Learning, Android Development}
+% END of Skills
+
+\cvsection{Projects}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/P2P_Messenger_App}{p2p Messenger \faGithub}}{November 2019}
+\vspace{0.3em}
+\begin{itemize}
+\item p2p Messenger is an instant messaging Android application that is built using Java socket \& has peer‑to‑peer connection architecture in it.
+\item Tools: Android SDK, Java
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/E-Learniverse-Django}{E-Learniverse}}{January 2022}
+\vspace{0.3em}
+\faLink\textbf{Link:}{\href{https://github.com/akash-podder/E-Learniverse-Django}{ https://github.com/akash-podder/E\_Learniverse\_Django}}
+\vspace{0.3em}
+\begin{itemize}
+\item It is a project for personal use to learn \& to document the learnings for Django Backend Application.
+\item Containerized the application with the help of Docker \& Docker-compose.
+\item Used Celery \& Celery-Beat for doing asynchronous \& periodic tasks in Django.
+\item Steps \& basic guide to learn \& apply Flexbox for basic UI design.
+\item Tools: Django, Docker, Docker-compose, Celery, Redis, RabbitMQ
+\end{itemize}
+
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/E-Cloud-Learniverse}{E-Cloud-Learniverse (Link)}}{Aug 2024}
+\vspace{0.3em}
+\begin{itemize}
+\item Developed a comprehensive three-tier web application (FastAPI backend, React frontend and PostgreSQL database) demonstrating modern cloud-native development practices.
+\item Containerized the entire application stack using Docker and Docker Compose, achieving consistent deployments and horizontal scalability across multiple environments.
+\item Orchestrated production-ready deployment on Kubernetes using Helm charts, implementing industry-standard DevOps practices for container management and service discovery.
+\item Tools: Docker, Kubernetes, Helm, FastAPI, ReactJS, PostgreSQL
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/Youtube-Transcript-Summarizer-Using-RAG-Langchain}{Youtube Transcript Summarizer using RAG (Link)}}{Oct 2024}
+\vspace{0.3em}
+\begin{itemize}
+\item Built a complete end-to-end application to summarize YouTube videos using transcripts with a Retrieval-Augmented Generation (RAG) pipeline, integrating a locally hosted model via Ollama and implementing retrieval and generation with LangChain.
+\item Developed APIs using Django to serve transcript summaries and user queries through backend service interface.
+\item Tools: Langchain, Django, Ollama
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/Redis-Replication}{Redis Replication \& High availability with Redis Sentinel (Link)}}{Jan 2024}
+\vspace{0.3em}
+\begin{itemize}
+\item It is a Docker configuration project to run 1 Master \& Two Slave Replica instances within a Docker Network \& for high availability of these Redis servers, 3 Redis Sentinel Docker instances are used within the same Docker Network.
+\item Also, utilized HAProxy as a Layer-4 (Transport Layer) proxy to perform health checks on the master Redis node and consistently route external application clients' requests to the latest master Redis node.
+\item Orchestrated the Redis cluster using Kubernetes StatefulSets and manifests, ensuring persistent identities, stable storage and efficient Pod scalability.
+\item Tools: Redis, Redis-Sentinel, Docker, HAProxy, Kubernetes
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/Linux-Simple-Device-Driver}{Simple Custom Linux Read Driver (Link)}}{Aug 2024}
+\vspace{0.3em}
+\begin{itemize}
+\item Developed a custom Linux kernel driver to handle user-space read operations, returning a string acknowledgment from kernel space to user space. It was built to gain a deeper understanding of how Linux kernel drivers function internally.
+\item Tools: C, Multipass(for virtualizing the OS)
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/Movie-Recommender-System}{Movie Recommender System (Link)}}{September 2021}
+\vspace{0.3em}
+\begin{itemize}
+\item Developed a content-based movie recommendation system using a cosine similarity matrix on a dataset of 5,000 movies and deployed it via the Django framework.
+\item Developed and implemented a content-based machine learning recommendation model using a dataset of approximately 5000 movies, with API developed in the Django framework.
+\item MORE: It is a content-based machine learning recommendation model using a dataset of approximately 5000 movies.
+\item The dataset was pre-processed and features were extracted using BoW (Bag of words) vectorization technique.
+\item The frontend and API was developed in Django framework.
+\item Tools: Pandas, Sklearn, Django
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/SUST_Resource_Archive}{SUST Resource Archive (Link)}}{January 2021}
+\vspace{0.3em}
+\begin{itemize}
+\item A web application where thesis \& research related works are
+stored \& can easily be shared with others for research purposes.
+\item Tools: Laravel, MySql
+\end{itemize}
+
+\cvprojectWithGap{\href{https://github.com/akash-podder/ShopManager_Java}{Smart Shop Manager (Link)}}{May 2018}
+\vspace{0.3em}
+\begin{itemize}
+\item  A desktop application to manage shop products, billing sales and employee information.
+\item Tools: Java, JavaFx, CSS
+\end{itemize}
+
+% END of Projects
+
+\cvsection{Achievements \& Programming}
+\textcolor{Aqua}\faTrophy{\textbf{2$^{nd}$ Runner-Up in Software Hackathon held on 19-20th April at LICT SUST TECHFEST 2019. \href{https://github.com/akash-podder/ECHO}{(Project Link \faLink)}}
+
+\divider
+
+\textcolor{Aqua}\faCircle\textbf{Overall 600+ different problems are solved}
+\begin{itemize}
+\item \textit{Codeforces (RatedRAkash)}: 350+ solves
+\href{https://codeforces.com/profile/RatedRAkash}{\faLink}
+\item \textit{Leetcode (AkashPodder)}: 260+ solves
+\href{https://leetcode.com/u/Akash-Podder/}{\faLink}
+\item \textit{StopStalk}: akash\_podder \href{https://www.stopstalk.com/user/profile/akash_podder}{\faLink}
+\end{itemize}
+
+%  End of Achievements and Programming
+
+\cvsection{Accomplishment}
+\textcolor{Aqua}\faTrophy{\textbf{2$^{nd}$ Runner-Up in Software Hackathon held on 19-20th April at LICT SUST TECHFEST 2019. \href{https://github.com/akash-podder/ECHO}{(Project Link \faLink)}}
+\vspace{5pt}
+\begin{itemize}
+\item \cvprojectWithGap{\href{https://github.com/akash-podder/ECHO}{ECHO (Android Project)}}{April 2019}
+\begin{itemize}
+\item  It was a 48 hour Hackathon, where we developed a sign language conversion android app called ECHO.
+\item The app seamlessly translates between text, speech and American Sign Language, enabling bidirectional communication to help disabled people.
+\end{itemize}
+\end{itemize}
+
+\cvsection{Research Experience}
+{\cvprojectWithGap{Undergraduate Thesis}{June 2021}{\href{https://github.com/akash-podder/Bangla_Topic_Modeling}{Bangla Topic Modeling Techniques \& Comparison (Thesis)}}
+{
+\vspace{3pt}
+\begin{itemize}
+\item  Undergraduate thesis project, comparing various models for Bangla topic modeling using baseline models \& ProdLDA and analyzing News from collected dataset from recent news (around \textbf{288k}).
+\item The research focused on developing a topic modeling algorithm for Bangla and using it to extract topics from online news documents (around \textbf{288k}).
+\item The findings of the research are a modified-LDA that works well on Bangla data and a method to find news trends.
+\item Fed the Bangla dataset and tuned the hyper-parameters to fit the data and used it to to analyze news trends in 9 different categories over the past 5 years.
+
+......................................
+
+\item Designed and evaluated a modified Latent Dirichlet Allocation (Prod-LDA) model, outperforming existing models on Bangla datasets.
+\item Collected and processed \textbf{288k} online news articles from 9 categories over 5 years to detect emerging news trends.
+\item Developed a custom preprocessing pipeline to enhance Bangla text processing.
+\end{itemize}
+}}
+
+\cvsection{Publication}
+\textbf{A Systematic Literature Review on English and Bangla Topic Modeling}, Journal of Computer Science, 17(1), 1-18.{\href{https://thescipub.com/abstract/jcssp.2021.1.18}{\faLink}}
+
+\cvsection{Scholarship}
+\cvscholarship{\textcolor{Aqua}{\faIcon{scroll}}\textbf{University Merit Scholarship}}{Shahjalal University of Science and Technology}{2017-2019}
+
+\cvsection{Certification}
+\begin{itemize}
+\item \textbf{Natural Language Processing with Classification and Vector Spaces }{\href{https://coursera.org/share/693c844c1b1e46c89e61355131ebadd9}{\faLink}} \\
+\item \textbf{Deep Learning Specialization }{\href{https://coursera.org/share/281b32819f0e7bc7a9c0709162cd1f19}{\faLink}}
+\end{itemize}
+
+\cvsection{Programming}
+\textcolor{Aqua}\faCircle\textbf{Overall 650+ different problems are solved}
+\vspace{0.4em}
+\begin{itemize}
+\item \textit{Codeforces (RatedRAkash)}: 350+ solves
+\href{https://codeforces.com/profile/RatedRAkash}{\faLink}
+\item \textit{Leetcode (AkashPodder)}: 300+ solves
+\href{https://leetcode.com/u/Akash-Podder/}{\faLink}
+\item \textit{Vjudge (RatedRAkash)}: 250+ solves\href{https://vjudge.net/user/RatedRAkash}{\faLink}
+\item \textit{UVa Judge (Rated R @kash)}: 80+ solves
+\href{https://uhunt.onlinejudge.org/id/889823}{\faLink}
+\item \textit{HackerRank}: \href{https://www.hackerrank.com/profile/akashpodder}{akashpodder \faLink}
+\item \textit{StopStalk}: \href{https://www.stopstalk.com/user/profile/akash_podder}{akash\_podder \faLink}
+\item \textit{Rosalind (Rated\_R\_Akash)}: 30+ solves \href{https://rosalind.info/users/Rated_R_Akash/}{\faLink}
+\item \textbf{Participated in Programming Contest in SUST CSE Carnival 2017}
+\end{itemize}
+
+\end{document}
